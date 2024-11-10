@@ -69,13 +69,16 @@ Interactive Charts: Hover over charts to see detailed data points.
 Data Filtering: Adjust the displayed data by setting specific date ranges or filtering metrics.
 
 Code Structure
+
 /src/components: React components for the user interface.
 /src/utils: Utility functions for data processing and API integration.
 /src/styles: CSS and styling for the application.
 
 Contributing
+
 If you’d like to contribute to this project, please create a fork, make your changes, and submit a pull request.
 
 License
+
 This project is for educational purposes as part of the J.P. Morgan Software Engineering Virtual Experience and is not intended for commercial use.
 
