@@ -1,5 +1,7 @@
 J.P. Morgan Virtual Experience Task 3
+
 Project Overview
+
 This project is a web application developed as part of the J.P. Morgan Software Engineering Virtual Experience. The goal of Task 3 is to create a real-time data visualization tool that assists traders by providing live updates on market data. The application displays various metrics in a clear and interactive format, enabling users to analyze trends and make data-driven decisions.
 
 Features
