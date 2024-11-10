@@ -1,73 +1,73 @@
-<p align="center">
-<a href="https://www.insidesherpa.com/virtual-internships/prototype/R5iK7HMxJGBgaSbvk/Technology%20Virtual%20Experience" target="_blank">
-<img src="https://insidesherpa-assets.s3-ap-southeast-2.amazonaws.com/icons/jpmorgan/github+repo+images/jpmc+github+img.png">
-	</a>
-</p>
+.P. Morgan Virtual Experience Task 3
+Project Overview
+This project is a web application developed as part of the J.P. Morgan Software Engineering Virtual Experience. The goal of Task 3 is to create a real-time data visualization tool that assists traders by providing live updates on market data. The application displays various metrics in a clear and interactive format, enabling users to analyze trends and make data-driven decisions.
 
-<p align="center"> 
-	<b><a href="#task">Task Overview</a></b>
-	|
-	<b><a href="#installation">Installation Instructions</a></b>
-	| 
-	<b><a href="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/88AisH7iuw3L5N5ig" target="_blank">Link to Module 2</a></b>
+Features
+Live Data Feed Integration: Real-time updates on stock prices and other financial metrics.
+Dynamic Visualizations: Line charts, candlestick charts, and bar graphs to represent data effectively.
+User Interaction: Tooltips, filtering options, and zoom capabilities for better data analysis.
+Error Handling: Smooth error handling for stable performance, even with data feed interruptions.
+Tech Stack and Skills Used
+Frontend
+JavaScript: Core logic for data processing and visualization.
+HTML & CSS: Structuring and styling of the web application.
+React.js: Framework for building the user interface.
+D3.js / Chart.js / Plotly: Libraries for creating dynamic and interactive data visualizations.
+Backend
+Node.js: Server-side logic for handling data requests (if applicable).
+Express.js: Web framework for setting up routes and endpoints (if applicable).
+Data Handling
+WebSocket API: Fetches live market data to keep visualizations up-to-date.
+REST API: For retrieving additional data, if needed.
+Development Tools
+Git: Version control for tracking changes.
+npm / yarn: Package managers for installing dependencies.
+Docker: Containerization for easy deployment (optional).
+Key Skills Developed
+Data Visualization: Proficiency in visualizing large, complex datasets for real-time analysis.
+Frontend Development: Experience in creating responsive, interactive user interfaces.
+API Integration: Skills in connecting and managing live data through WebSocket and REST APIs.
+Problem Solving: Handling data feed errors and optimizing performance for large data sets.
+Getting Started
+Prerequisites
+Ensure you have the following installed:
 
-<h1> Introduction</h1> 
-<b> Experience Technology at JP Morgan Chase </b>
-<p>Try out what real work is like in the technology team JP Morgan Chase. Fast track to the tech team with your work.</p>
+Node.js (v14 or above)
+npm or yarn (latest version)
+Setup Instructions
+Clone the Repository
 
-<h2 id="task"> Module 2 Task Overview </h2>
-<p>Use JP Morgan Chase's frameworks and tools
-Implement JP Morgan Chase’s Perspective open source code in preparation for data visualization</p>
-<p> <b>Aim:</b>Take an incomplete setup of Perspective, i.e. a graph that updates manually, and make it work with the code from Task 1 such that it now updates automatically by continuously requesting from the server application</p>
+bash
+Copy code
+git clone <repository-url>
+cd <project-directory>
+Install Dependencies
 
-<ol>
-	<li>Please clone this repository to start the task</li>
-	<li>[goal-a] In the client application, observe that when new data feed is retrieved whenever you click the 'Start Streaming Data' button, the previous entry is re-entered into the table. Update the application so that the table does not have duplicated entries</li>
-	<li>[goal-b] We also want the react app to keep continuosly requesting data from the python server. Currently, the data feed is called only once every time the 'Start Streaming' button is clicked. Change the application to continuously query the datafeed every 100ms when the 'Start Streaming' is clicked.</li>
-	<li>[goal-c] Currently, the Perspective element only shows the data in table view after the data loads. Add Perspective configurations so that when the data is loaded, it shows the historical data of ask_price ABC in the Y line chart.</li>
-	<li>Upload a git patch file as the submission to this task</li>	
-</ol>
+bash
+Copy code
+npm install
+Run the Application
 
-<h2 id="installation" >Set up / Installation</h2>
-<p>In order to get the server and client application code working on your machine, <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/setup_devenv_m2_v8.pdf">follow the setup here</a></p>
+bash
+Copy code
+npm start
+This will start the application locally at http://localhost:3000.
 
-<p><b>Note</b>:This is the version of the JPM 2 exercise that uses Python 3. The Python 2.7 version is in <a href="https://github.com/insidesherpa/JPMC-tech-task-2">this other repo</a></p>
+Connect the Data Feed
 
-<h2>How to Run</h2>
+Ensure you have API access and credentials if needed.
+Follow the provided API documentation to set up and test the live data feed.
+Using the Application
+Real-Time Updates: View live updates on stock prices, volumes, and trends.
+Interactive Charts: Hover over charts to see detailed data points.
+Data Filtering: Adjust the displayed data by setting specific date ranges or filtering metrics.
+Code Structure
+/src/components: Contains React components for the user interface.
+/src/utils: Utility functions for data processing and API integration.
+/src/styles: CSS and styling for the application.
+Contributing
+If you’d like to contribute to this project, please create a fork, make your changes, and submit a pull request.
 
-<p>Similar to Task 1, start the data feed server by running the python server.</p> 
-<p>Make sure your terminal / command line is in the repository first before doing any of this.</p>
-<p>If you are using Windows, make sure to run your terminal/command prompt as administrator.</p>
+License
+This project is for educational purposes as part of the J.P. Morgan Software Engineering Virtual Experience and is not intended for commercial use.
 
-<code> python datafeed/server3.py </code>
-
-If you encounter an issue with `datautil.parser`, run this command: 
-
-	pip install python-dateutil
-
-If you don't have pip, you can install it from: https://pip.pypa.io/en/stable/installing/
-
-Run <code>npm install && npm start</code> to start the React application.
-
-It's okay to have audit warnings when installing/running the app.
-
-If you don't have `npm` (although you should if you followed the set up / installation part), you can install the recommended version alongside NodeJS from: https://nodejs.org/en/
-
-The recommended version are node v11.0.0 and npm v6.4.1
-
-Open http://localhost:3000 to view the app in the browser. The page will reload if you make edits.
-
-
-<h2>Known Issues</h2>
-Some users seem to be having trouble with the unzipped version of the node_modules back up for windows. 
-This is the alternative unzipped version:
-https://drive.google.com/drive/folders/1wzIlt-OeiK6nYEHidsOGlpJ_KmeoPVXz
-
-Note: You may need to (hard) refresh the link to the public gdrive to see all of the files/folders e.g. @jpmorganchase/perspective as it takes gdrive a bit to load them for you.
-
-
-<h2>How to fix the code to meet the objectives</h2>
-<p>To make the changes necessary to complete the objectives of this task, <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/making_changes_m2_v2.pdf">follow this guide</a>.</p>
-
-<h2>How to submit your work</h2>
-<p>A patch file is what is required from you to submit. To create a patch file, <a href="https://insidesherpa.s3.amazonaws.com/vinternships/companyassets/Sj7temL583QAYpHXD/create_patch_file_v3a.pdf">follow this guide</a>. Then submit the patch file in the <a href="https://www.insidesherpa.com/modules/R5iK7HMxJGBgaSbvk/88AisH7iuw3L5N5ig">JPM Module 2 Page</a>.</p>
